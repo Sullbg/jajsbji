@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buat Adek</title>
+  <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+
+<div class="valentines-day">
+  <div class="envelope"></div>
+  <div class="heart"></div>
+  <div class="text">HAPPY <br>VALENTINE'S <br>DAY</div>
+  <div class="front"></div>
+</div>
+
+<div id="card">
+  <div class="side one">
+    <h2>Spesial For Valentine</h2>
+    <p>For My Favorite Girl's</p>
+    <p>With you, every day is Valentine's Day</p>
+    <p>Our love story is my favorite</p>
+    <p>You are a dream that I will never end/p>
+    <p>Loving you is the best decision I ever made</p>
+    <p>I love you more than words can express</p>
+  </div>
+  <div class="side two">
+    <h2>tata🩷</h2>
+    <p>You are the most important person to me</p>
+    <p>Our love is like a fairy tale come true</p>
+    <p>My love for you grows stronger every day</p>
+    <p>Our love is a flame that will never extinguish</p>
+    <p>You are the poetry my heart keeps writing</p>
+    <p>With you, every moment feels like a love song.</p>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: right; margin-right: 10px;">ZALL </p>
+  </div>
+</div>
+
+<!-- Musik Latar Belakang -->
+<audio id="bg-music" autoplay loop>
+  <source src="lagu.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Tombol Play & Pause Musik -->
+<div class="music-controls">
+  <button onclick="playMusic()">Play</button>
+  <button onclick="pauseMusic()">Pause</button>
+</div>
+
+<script>
+  function playMusic() {
+    var music = document.getElementById('bg-music');
+    music.muted = false; // Pastikan tidak mute
+    music.play();
+  }
+
+  function pauseMusic() {
+    document.getElementById('bg-music').pause();
+  }
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
